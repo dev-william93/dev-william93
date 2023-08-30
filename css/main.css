@@ -90,6 +90,24 @@ body.blockSiteScrolling:not(.responsive) #WIX_ADS {
     margin-top: var(--blocked-site-scroll-margin-top)
 }
 
+.footerList{
+    font-size: 12px;
+    list-style-type: none;
+    padding-left: 25px
+}
+
+.links h4, .location h4{
+    margin-left: 25px;
+}
+
+.about-company .priorityText{
+    font-size: 12px;
+}
+
+.copyright{
+    text-align: center;
+}
+
 @keyframes slide-horizontal-new {
     0% {
         transform: translateX(100%)
