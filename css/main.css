@@ -108,6 +108,10 @@ body.blockSiteScrolling:not(.responsive) #WIX_ADS {
     text-align: center;
 }
 
+.s123-module-headers.layout-29 .headers-container.second-side .headers-description, .s123-module-headers.layout-29 .headers-container .headers-description{
+    bottom: -150px;
+}
+
 @keyframes slide-horizontal-new {
     0% {
         transform: translateX(100%)
