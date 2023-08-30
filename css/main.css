@@ -112,6 +112,26 @@ body.blockSiteScrolling:not(.responsive) #WIX_ADS {
     bottom: -150px;
 }
 
+.description ul li{
+    list-style: none;
+}
+
+.logoList ul, .lastLogoList ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+#mainNav02{
+    background-color: #0d3451;
+    color: #fff !important;
+    padding: 20px 0px;
+}
+
+#mainNav02 .site_container a{
+    color: #fff !important;
+}
+
 @keyframes slide-horizontal-new {
     0% {
         transform: translateX(100%)
