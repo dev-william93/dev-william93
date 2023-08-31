@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.site_container{
+*{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -135,12 +135,12 @@ body.blockSiteScrolling:not(.responsive) #WIX_ADS {
 
 #mainNav02{
     background-color: #0d3451;
-    color: #fff !important;
+    color: #d3e8f8;
     padding: 20px 0px;
 }
 
 #mainNav02 .site_container a{
-    color: #fff !important;
+    color: #d3e8f8;
 }
 
 @keyframes slide-horizontal-new {
@@ -236,11 +236,6 @@ html {
     vertical-align: baseline
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px
-}
-
 body,
 html {
     height: 100%
@@ -271,5 +266,70 @@ body:not([data-js-loaded]) [data-hide-prejs] {
 @supports(container-type:inline-size) {
     :root {
         --one-unit: 1cqw
+    }
+}
+
+.headers-Objective{
+    right: auto !important;
+    left: 65px !    ;
+    width: 700px !important;
+}
+
+@media only screen and (max-width: 1320px) {
+    .headers-Objective{
+        bottom: -450px !important;
+    }
+    #section-63d0e3c72b97d{
+        padding-top: 365px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .s123-module-headers.layout-29 .headers-container.second-side .headers-description, .s123-module-headers.layout-29 .headers-container .headers-description{
+        bottom: 150px !important;
+    }
+    .s123-module-headers.layout-29 .headers-container.second-side .headers-Objective, .s123-module-headers.layout-29 .headers-container .headers-Objective{
+        bottom: -100px !important;
+    }
+    .header-background-container{
+        margin-top: 0px !important;
+    }
+    .links h4, .location h4{
+        margin-left: 0px;
+    }
+    .footerList{
+        padding-left: 0px
+    }
+    .description{
+        padding: 0px 10px;
+    }
+    #mainNavMobile .navPagesLeft{
+        width: 60px !important;
+    }
+    #gotoTop{
+        width: 40px !important;
+    }
+    #mainNavMobile, .home_page, .container-font, .logoList{
+        width: 100% !important;
+        overflow: auto !important;
+    }
+    .logoList ul, .lastLogoList ul{
+        display: block;
+        margin: 20px 0px;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .headers-Objective{
+        padding: 20px 10px;
+        border-radius: 25px;
+        right: auto !important;
+        left: auto !important;
+        bottom: -400px !important;
+        width: 100% !important;
+    }
+    #section-63d0e3c72b97d {
+        padding-top: 60px;
     }
 }
