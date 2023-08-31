@@ -134,9 +134,370 @@
             --sticky_menu: 1;
             --scrollHeaderSize: 0px;
         }
-    </style> <!-- Custom CSS --> <!-- Minimize CSS files -->
+    </style>
     <link rel="stylesheet" href="https://cdn-cms-s.f-static.net/versions/2/css/minimize_main.css?v=y83080"
         type="text/css" crossorigin="anonymous">
+    <!-- Custom CSS --> <!-- Minimize CSS files -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        .nav>li>a:hover,
+        .nav>li>a:focus {
+            background-color: #0d3451;
+        }
+    
+    
+        body.device-mobile-optimized {
+            overflow-x: hidden;
+            overflow-y: scroll
+        }
+    
+        body.device-mobile-optimized:not(.responsive) #SITE_CONTAINER {
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: visible;
+            position: relative;
+            width: 320px
+        }
+    
+        body.device-mobile-optimized:not(.responsive):not(.blockSiteScrolling) #SITE_CONTAINER {
+            margin-top: 0
+        }
+    
+        body.device-mobile-optimized>* {
+            max-width: 100% !important
+        }
+    
+        body.device-mobile-optimized #site-root {
+            overflow-x: hidden;
+            overflow-y: hidden
+        }
+    
+        @supports(overflow:clip) {
+            body.device-mobile-optimized #site-root {
+                overflow-x: clip;
+                overflow-y: clip
+            }
+        }
+    
+        body.device-mobile-non-optimized #SITE_CONTAINER #site-root {
+            overflow-x: hidden;
+            overflow-y: auto
+        }
+    
+        body.device-mobile-non-optimized.fullScreenMode {
+            background-color: #5f6360
+        }
+    
+        body.device-mobile-non-optimized.fullScreenMode #MOBILE_ACTIONS_MENU,
+        body.device-mobile-non-optimized.fullScreenMode #SITE_BACKGROUND,
+        body.device-mobile-non-optimized.fullScreenMode #site-root,
+        body.fullScreenMode #WIX_ADS {
+            visibility: hidden
+        }
+    
+        body.fullScreenMode {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important
+        }
+    
+        body.fullScreenMode.device-mobile-optimized #TINY_MENU {
+            opacity: 0;
+            pointer-events: none
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized {
+            overflow-x: hidden !important;
+            overflow-y: auto !important
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized #masterPage,
+        body.fullScreenMode-scrollable.device-mobile-optimized #site-root {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized #SITE_BACKGROUND,
+        body.fullScreenMode-scrollable.device-mobile-optimized #masterPage {
+            height: auto !important
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized #masterPage.mesh-layout {
+            height: 0 !important
+        }
+    
+        body.blockSiteScrolling {
+            position: fixed;
+            width: 100%
+        }
+    
+        body.blockSiteScrolling #SITE_CONTAINER {
+            margin-top: calc(var(--blocked-site-scroll-margin-top)*-1)
+        }
+    
+        body.blockSiteScrolling:not(.responsive) #WIX_ADS {
+            margin-top: var(--blocked-site-scroll-margin-top)
+        }
+    
+        .footerList {
+            font-size: 12px;
+            list-style-type: none;
+            padding-left: 25px
+        }
+    
+        .links h4,
+        .location h4 {
+            margin-left: 25px;
+        }
+    
+        .about-company .priorityText {
+            font-size: 12px;
+        }
+    
+        .copyright {
+            text-align: center;
+        }
+    
+        .s123-module-headers.layout-29 .headers-container.second-side .headers-description,
+        .s123-module-headers.layout-29 .headers-container .headers-description {
+            bottom: -150px;
+        }
+    
+        .description ul li {
+            list-style: none;
+        }
+    
+        .logoList ul,
+        .lastLogoList ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+    
+        #mainNav02 {
+            background-color: #0d3451;
+            color: #d3e8f8;
+            padding: 20px 0px;
+        }
+    
+        #mainNav02 .site_container a {
+            color: #d3e8f8;
+        }
+    
+        @keyframes slide-horizontal-new {
+            0% {
+                transform: translateX(100%)
+            }
+        }
+    
+        @keyframes slide-horizontal-old {
+            80% {
+                opacity: 1
+            }
+    
+            to {
+                opacity: 0;
+                transform: translateX(-100%)
+            }
+        }
+    
+        @keyframes slide-vertical-new {
+            0% {
+                transform: translateY(-100%)
+            }
+        }
+    
+        @keyframes slide-vertical-old {
+            80% {
+                opacity: 1
+            }
+    
+            to {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+        }
+    
+        @keyframes out-in-new {
+            0% {
+                opacity: 0
+            }
+        }
+    
+        @keyframes out-in-old {
+            to {
+                opacity: 0
+            }
+        }
+    
+        html[data-page-transition=SlideHorizontal]::view-transition-old(page-group) {
+            animation: slide-horizontal-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=SlideHorizontal]::view-transition-new(page-group) {
+            animation: slide-horizontal-new .6s cubic-bezier(.83, 0, .17, 1) backwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=SlideVertical]::view-transition-old(page-group) {
+            animation: slide-vertical-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=SlideVertical]::view-transition-new(page-group) {
+            animation: slide-vertical-new .6s cubic-bezier(.83, 0, .17, 1) backwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=OutIn]::view-transition-old(page-group) {
+            animation: out-in-old .35s cubic-bezier(.64, 0, .78, 0) forwards
+        }
+    
+        html[data-page-transition=OutIn]::view-transition-new(page-group) {
+            animation: out-in-new .35s cubic-bezier(.22, 1, .36, 1) .35s backwards
+        }
+    
+        @media(prefers-reduced-motion:reduce) {
+    
+            ::view-transition-group(*),
+            ::view-transition-new(*),
+            ::view-transition-old(*) {
+                animation: none !important
+            }
+        }
+    
+        body,
+        html {
+            background: transparent;
+            border: 0;
+            margin: 0;
+            outline: 0;
+            padding: 0;
+            vertical-align: baseline
+        }
+    
+        body,
+        html {
+            height: 100%
+        }
+    
+        body {
+            overflow-x: auto;
+            overflow-y: scroll
+        }
+    
+        body:not(.responsive) #site-root {
+            min-width: var(--site-width);
+            width: 100%
+        }
+    
+        body:not([data-js-loaded]) [data-hide-prejs] {
+            visibility: hidden
+        }
+    
+        #SITE_CONTAINER {
+            position: relative
+        }
+    
+        :root {
+            --one-unit: 1vw
+        }
+    
+        @supports(container-type:inline-size) {
+            :root {
+                --one-unit: 1cqw
+            }
+        }
+    
+        .headers-Objective {
+            right: auto !important;
+            left: 65px !important;
+            width: 700px !important;
+        }
+    
+        @media only screen and (max-width: 1320px) {
+            .headers-Objective {
+                bottom: -450px !important;
+            }
+    
+            #section-63d0e3c72b97d {
+                padding-top: 365px;
+            }
+        }
+    
+        @media only screen and (max-width: 600px) {
+    
+            .s123-module-headers.layout-29 .headers-container.second-side .headers-description,
+            .s123-module-headers.layout-29 .headers-container .headers-description {
+                bottom: 150px !important;
+            }
+    
+            .s123-module-headers.layout-29 .headers-container.second-side .headers-Objective,
+            .s123-module-headers.layout-29 .headers-container .headers-Objective {
+                bottom: -100px !important;
+            }
+    
+            .header-background-container {
+                margin-top: 0px !important;
+            }
+    
+            .links h4,
+            .location h4 {
+                margin-left: 0px;
+            }
+    
+            .footerList {
+                padding-left: 0px
+            }
+    
+            .description {
+                padding: 0px 10px;
+            }
+    
+            #mainNavMobile .navPagesLeft {
+                width: 60px !important;
+            }
+    
+            #gotoTop {
+                width: 40px !important;
+            }
+    
+            #mainNavMobile,
+            .home_page,
+            .container-font,
+            .logoList {
+                width: 100% !important;
+                overflow: auto !important;
+            }
+    
+            .logoList ul,
+            .lastLogoList ul {
+                display: block;
+                margin: 20px 0px;
+                overflow: auto;
+            }
+        }
+    
+        @media only screen and (max-width: 800px) {
+            .headers-Objective {
+                padding: 20px 10px;
+                border-radius: 25px;
+                right: auto !important;
+                left: auto !important;
+                bottom: -400px !important;
+                width: 100% !important;
+            }
+    
+            #section-63d0e3c72b97d {
+                padding-top: 60px;
+            }
+        }
+    </style>
     <style>
         .s123-module-services.layout-1 {
             padding: 50px 0;
@@ -1135,7 +1496,7 @@
             'cdn-system-files': 'https://cdn-cms-s.f-static.net',
             'cdn-images-files': 'https://static1.s123-cdn-static-a.com',
             'v-cache': 'y83080',
-            'is_local_server': false,
+            'is_local_server': true,
             't_direction': "ltr",
             'cdn-user-videos-files': "https:\/\/cdn-media.f-static.net"
         };

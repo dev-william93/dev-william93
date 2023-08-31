@@ -29,7 +29,7 @@
         content="Vorkinsta - An Environment that is connecting Creative, Professional Experts" class="s123-js-pjax">
     <meta property="og:title" content="Vorkinsta - IT Consulting Service" class="s123-js-pjax">
     <meta property="og:site_name" content="Vorkinsta" class="s123-js-pjax">
-    <meta property="og:see_also" content="https://64d3c7758a138.site123.me" class="s123-js-pjax">
+    <meta property="og:see_also" content="https://vorkinsta.com" class="s123-js-pjax">
     <!-- Google+ Meta Info -->
     <meta itemprop="name" content="Vorkinsta - IT Consulting Service" class="s123-js-pjax">
     <meta itemprop="description" content="Vorkinsta - An Environment that is connecting Creative, Professional Experts"
@@ -138,8 +138,366 @@
     </style> <!-- Custom CSS --> <!-- Minimize CSS files -->
     <link rel="stylesheet" href="https://cdn-cms-s.f-static.net/versions/2/css/minimize_main.css?v=y83080"
         type="text/css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css"
-        type="text/css" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        .nav>li>a:hover,
+        .nav>li>a:focus {
+            background-color: #0d3451;
+        }
+    
+    
+        body.device-mobile-optimized {
+            overflow-x: hidden;
+            overflow-y: scroll
+        }
+    
+        body.device-mobile-optimized:not(.responsive) #SITE_CONTAINER {
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: visible;
+            position: relative;
+            width: 320px
+        }
+    
+        body.device-mobile-optimized:not(.responsive):not(.blockSiteScrolling) #SITE_CONTAINER {
+            margin-top: 0
+        }
+    
+        body.device-mobile-optimized>* {
+            max-width: 100% !important
+        }
+    
+        body.device-mobile-optimized #site-root {
+            overflow-x: hidden;
+            overflow-y: hidden
+        }
+    
+        @supports(overflow:clip) {
+            body.device-mobile-optimized #site-root {
+                overflow-x: clip;
+                overflow-y: clip
+            }
+        }
+    
+        body.device-mobile-non-optimized #SITE_CONTAINER #site-root {
+            overflow-x: hidden;
+            overflow-y: auto
+        }
+    
+        body.device-mobile-non-optimized.fullScreenMode {
+            background-color: #5f6360
+        }
+    
+        body.device-mobile-non-optimized.fullScreenMode #MOBILE_ACTIONS_MENU,
+        body.device-mobile-non-optimized.fullScreenMode #SITE_BACKGROUND,
+        body.device-mobile-non-optimized.fullScreenMode #site-root,
+        body.fullScreenMode #WIX_ADS {
+            visibility: hidden
+        }
+    
+        body.fullScreenMode {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important
+        }
+    
+        body.fullScreenMode.device-mobile-optimized #TINY_MENU {
+            opacity: 0;
+            pointer-events: none
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized {
+            overflow-x: hidden !important;
+            overflow-y: auto !important
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized #masterPage,
+        body.fullScreenMode-scrollable.device-mobile-optimized #site-root {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized #SITE_BACKGROUND,
+        body.fullScreenMode-scrollable.device-mobile-optimized #masterPage {
+            height: auto !important
+        }
+    
+        body.fullScreenMode-scrollable.device-mobile-optimized #masterPage.mesh-layout {
+            height: 0 !important
+        }
+    
+        body.blockSiteScrolling {
+            position: fixed;
+            width: 100%
+        }
+    
+        body.blockSiteScrolling #SITE_CONTAINER {
+            margin-top: calc(var(--blocked-site-scroll-margin-top)*-1)
+        }
+    
+        body.blockSiteScrolling:not(.responsive) #WIX_ADS {
+            margin-top: var(--blocked-site-scroll-margin-top)
+        }
+    
+        .footerList {
+            font-size: 12px;
+            list-style-type: none;
+            padding-left: 25px
+        }
+    
+        .links h4,
+        .location h4 {
+            margin-left: 25px;
+        }
+    
+        .about-company .priorityText {
+            font-size: 12px;
+        }
+    
+        .copyright {
+            text-align: center;
+        }
+    
+        .s123-module-headers.layout-29 .headers-container.second-side .headers-description,
+        .s123-module-headers.layout-29 .headers-container .headers-description {
+            bottom: -150px;
+        }
+    
+        .description ul li {
+            list-style: none;
+        }
+    
+        .logoList ul,
+        .lastLogoList ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+    
+        #mainNav02 {
+            background-color: #0d3451;
+            color: #d3e8f8;
+            padding: 20px 0px;
+        }
+    
+        #mainNav02 .site_container a {
+            color: #d3e8f8;
+        }
+    
+        @keyframes slide-horizontal-new {
+            0% {
+                transform: translateX(100%)
+            }
+        }
+    
+        @keyframes slide-horizontal-old {
+            80% {
+                opacity: 1
+            }
+    
+            to {
+                opacity: 0;
+                transform: translateX(-100%)
+            }
+        }
+    
+        @keyframes slide-vertical-new {
+            0% {
+                transform: translateY(-100%)
+            }
+        }
+    
+        @keyframes slide-vertical-old {
+            80% {
+                opacity: 1
+            }
+    
+            to {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+        }
+    
+        @keyframes out-in-new {
+            0% {
+                opacity: 0
+            }
+        }
+    
+        @keyframes out-in-old {
+            to {
+                opacity: 0
+            }
+        }
+    
+        html[data-page-transition=SlideHorizontal]::view-transition-old(page-group) {
+            animation: slide-horizontal-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=SlideHorizontal]::view-transition-new(page-group) {
+            animation: slide-horizontal-new .6s cubic-bezier(.83, 0, .17, 1) backwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=SlideVertical]::view-transition-old(page-group) {
+            animation: slide-vertical-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=SlideVertical]::view-transition-new(page-group) {
+            animation: slide-vertical-new .6s cubic-bezier(.83, 0, .17, 1) backwards;
+            mix-blend-mode: normal
+        }
+    
+        html[data-page-transition=OutIn]::view-transition-old(page-group) {
+            animation: out-in-old .35s cubic-bezier(.64, 0, .78, 0) forwards
+        }
+    
+        html[data-page-transition=OutIn]::view-transition-new(page-group) {
+            animation: out-in-new .35s cubic-bezier(.22, 1, .36, 1) .35s backwards
+        }
+    
+        @media(prefers-reduced-motion:reduce) {
+    
+            ::view-transition-group(*),
+            ::view-transition-new(*),
+            ::view-transition-old(*) {
+                animation: none !important
+            }
+        }
+    
+        body,
+        html {
+            background: transparent;
+            border: 0;
+            margin: 0;
+            outline: 0;
+            padding: 0;
+            vertical-align: baseline
+        }
+    
+        body,
+        html {
+            height: 100%
+        }
+    
+        body {
+            overflow-x: auto;
+            overflow-y: scroll
+        }
+    
+        body:not(.responsive) #site-root {
+            min-width: var(--site-width);
+            width: 100%
+        }
+    
+        body:not([data-js-loaded]) [data-hide-prejs] {
+            visibility: hidden
+        }
+    
+        #SITE_CONTAINER {
+            position: relative
+        }
+    
+        :root {
+            --one-unit: 1vw
+        }
+    
+        @supports(container-type:inline-size) {
+            :root {
+                --one-unit: 1cqw
+            }
+        }
+    
+        .headers-Objective {
+            right: auto !important;
+            left: 65px !important;
+            width: 700px !important;
+        }
+    
+        @media only screen and (max-width: 1320px) {
+            .headers-Objective {
+                bottom: -450px !important;
+            }
+    
+            #section-63d0e3c72b97d {
+                padding-top: 365px;
+            }
+        }
+    
+        @media only screen and (max-width: 600px) {
+    
+            .s123-module-headers.layout-29 .headers-container.second-side .headers-description,
+            .s123-module-headers.layout-29 .headers-container .headers-description {
+                bottom: 150px !important;
+            }
+    
+            .s123-module-headers.layout-29 .headers-container.second-side .headers-Objective,
+            .s123-module-headers.layout-29 .headers-container .headers-Objective {
+                bottom: -100px !important;
+            }
+    
+            .header-background-container {
+                margin-top: 0px !important;
+            }
+    
+            .links h4,
+            .location h4 {
+                margin-left: 0px;
+            }
+    
+            .footerList {
+                padding-left: 0px
+            }
+    
+            .description {
+                padding: 0px 10px;
+            }
+    
+            #mainNavMobile .navPagesLeft {
+                width: 60px !important;
+            }
+    
+            #gotoTop {
+                width: 40px !important;
+            }
+    
+            #mainNavMobile,
+            .home_page,
+            .container-font,
+            .logoList {
+                width: 100% !important;
+                overflow: auto !important;
+            }
+    
+            .logoList ul,
+            .lastLogoList ul {
+                display: block;
+                margin: 20px 0px;
+                overflow: auto;
+            }
+        }
+    
+        @media only screen and (max-width: 800px) {
+            .headers-Objective {
+                padding: 20px 10px;
+                border-radius: 25px;
+                right: auto !important;
+                left: auto !important;
+                bottom: -400px !important;
+                width: 100% !important;
+            }
+    
+            #section-63d0e3c72b97d {
+                padding-top: 60px;
+            }
+        }
+    </style>
     <style>
         .s123-module-services.layout-1 {
             padding: 50px 0;
@@ -1225,43 +1583,30 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="part1" style="padding-bottom: 30px;">
-                    <div>
-                        <ul class="navPages nav navbar-nav">
-                            <li class="moduleMenu active"><a class="page-scroll homepageMenu" href="#page-top"><span
-                                        class="txt-container">Home</span></a></li>
-                            <li class="moduleMenu" data-menu-module-id="63d0e3c72b97d"><a class="page-scroll"
-                                    href="#section-63d0e3c72b97d"><span class="txt-container">About</span></a></li>
-                            <li class="moduleMenu" data-menu-module-id="5d0a0f53588b1"><a class="page-scroll"
-                                    href="#section-5d0a0f53588b1"><span class="txt-container">Services</span></a></li>
-                            <li class="moduleMenu" data-menu-module-id="5b0a4ba521825"><a class="page-scroll"
-                                    href="#section-5b0a4ba521825"><span class="txt-container">Contact</span></a></li>
-                        </ul>
-                    </div>
-                    <div> Copyright © 2023 All rights reserved -
-                        <span class="website-name-preview-helper">Vorkinsta</span>
-                    </div>
-                </div> -->
         </div>
         </footer>
     </div>
     </div>
     <div> </div>
-    <a id="gotoTop" class="gotoTop page-scroll" style="display: none;" href="#page-top"><i
+    <a id="gotoTop" class="gotoTop page-scroll" style="display: none;" href="#page-top">
+        <i
             class="svg-m s123-icon-converter " data-icon-name="angle-up"
             style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/angle-up.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/angle-up.svg?v=2');"
-            data-ie11-classes="" alt="angle-up">&nbsp;</i></a> <input type="hidden" id="layoutNUM" name="layoutNUM"
-        value="1"> <input type="hidden" id="footer_layout" name="footer_layout" value="2"> <input type="hidden"
-        id="layoutMenuPositionTXT" name="layoutMenuPositionTXT" value="top"> <input type="hidden" id="versionNUM"
-        name="versionNUM" value="2"> <input type="hidden" id="w" name="w" value=""> <input type="hidden" id="websiteID"
-        value="8408566"> <input type="hidden" id="website_uniqueID" value="64d3c7756d147-64d3c7756d148-64d3c7756d149">
-    <input type="hidden" id="enable_as_theme" value="0"> <input type="hidden" id="onepage" value="1"> <input
-        type="hidden" id="pjaxSupported" value="1"> <input type="hidden" id="moduleTypeNUM" class="s123-js-pjax"
-        name="moduleTypeNUM" value=""> <input type="hidden" id="hasEcommerce" value="0"> <input type="hidden"
-        id="pageUniqueID" class="s123-js-pjax" name="pageUniqueID" value="">
+            data-ie11-classes="" alt="angle-up">&nbsp;
+        </i>
+    </a> 
+    <input type="hidden" id="layoutNUM" name="layoutNUM" value="1"> 
+    <input type="hidden" id="footer_layout" name="footer_layout" value="2"> 
+    <input type="hidden" id="layoutMenuPositionTXT" name="layoutMenuPositionTXT" value="top"> 
+    <input type="hidden" id="versionNUM" name="versionNUM" value="2"> <input type="hidden" id="w" name="w" value=""> 
+    <input type="hidden" id="enable_as_theme" value="0"> 
+    <input type="hidden" id="onepage" value="1"> 
+    <input type="hidden" id="pjaxSupported" value="1"> 
+    <input type="hidden" id="moduleTypeNUM" class="s123-js-pjax" name="moduleTypeNUM" value=""> 
+    <input type="hidden" id="hasEcommerce" value="0"> 
+    <input type="hidden" id="pageUniqueID" class="s123-js-pjax" name="pageUniqueID" value="">
     <script>        var menuScrollOffset = 80;
         var packageNUM = 1;
-        var domain = '64d3c7758a138.site123.me';
         var languageCode = 'en';
         var multiLanCode = '';
         var globalLanguageChildLan = '';
@@ -1280,7 +1625,7 @@
             'cdn-system-files': 'https://cdn-cms-s.f-static.net',
             'cdn-images-files': 'https://static1.s123-cdn-static-a.com',
             'v-cache': 'y83080',
-            'is_local_server': false,
+            'is_local_server': true,
             't_direction': "ltr",
             'cdn-user-videos-files': "https:\/\/cdn-media.f-static.net"
         };
@@ -1291,341 +1636,6 @@
         };
 
     </script> <!-- JavaScript Translations Object -->
-    <script>var translations = {
-            "sent": "Sent!",
-            "enterYourQuery": "Enter your query",
-            "loading": "Loading...",
-            "closeEsc": "Close (Esc)",
-            "previousLeftArrowKey": "Previous (Left arrow key)",
-            "NextRightArrowKey": "Next (Right arrow key)",
-            "of": "of",
-            "more": "MORE",
-            "cart": "Cart",
-            "SearchResult": "Search Result",
-            "ChooseTheAmountDonate": "Choose the amount you want to donate",
-            "blogReviewMessage": "Thank you! Your comment will be published after being approved by the admin.",
-            "productReviewMessage": "Thank you! Your review will be published after being approved by the administrator.",
-            "ConfirmMailingSubscrive": "Please Confirm Your Email Address to Complete Your Subscription",
-            "subscribeTellAboutYou": "Please tell us about yourself",
-            "imageCouldNotLoaded": "<a href=\"%url%\">The image<\/a> could not be loaded.",
-            "searchInputValidation": "Please enter a valid search query.",
-            "jqueryValidMsgRequire": "This field is required.",
-            "jqueryValidMsgRemote": "Please fix this field.",
-            "jqueryValidMsgEmail": "Please enter a valid email address.",
-            "jqueryValidMsgUrl": "Please enter a valid URL.",
-            "jqueryValidMsgDate": "Please enter a valid date.",
-            "jqueryValidMsgDateISO": "Please enter a valid date (ISO).",
-            "jqueryValidMsgNumber": "Please enter a valid number.",
-            "jqueryValidMsgDigits": "Please enter only digits.",
-            "jqueryValidMsgCreditcard": "Please enter a valid credit card number.",
-            "jqueryValidMsgEqualTo": "Please enter the same value again.",
-            "jqueryValidMsgAccept": "Please enter a value with a valid extension.",
-            "jqueryValidMsgMaxlength": "Please enter no more than {0} characters.",
-            "jqueryValidMsgMinlength": "Please enter at least {0} characters.",
-            "jqueryValidMsgRangelength": "Please enter a value between {0} and {1} characters long.",
-            "jqueryValidMsgRange": "Please enter a value between {0} and {1}.",
-            "jqueryValidMsgMax": "Please enter a value less than or equal to {0}.",
-            "jqueryValidMsgMin": "Please enter a value greater than or equal to {0}.",
-            "sending": "Sending",
-            "firstName": "First Name",
-            "lastName": "Last Name",
-            "phone": "Phone",
-            "emailAddress": "Email address",
-            "fileUpload": "File Upload",
-            "send": "Send",
-            "search": "Search",
-            "productvalidatorPopover": "Required field",
-            "SpecialRequest": "Special Request",
-            "restaurantReservation": "Restaurant Reservation",
-            "ThankYouAuto": "Order completed, thank you for your order!",
-            "ThankYouManual": "Order is not completed yet, we will contact you soon",
-            "Ok": "OK",
-            "OrderNumber": "Order Number",
-            "Date": "Date",
-            "Hour": "Hour",
-            "TableSize": "Table Size",
-            "NoAvailableTime": "Sorry, there is no available time for this date, please try another date.",
-            "message": "Message",
-            "ThankYou": "Thank you",
-            "error_title": "Error",
-            "error_body": "Oops something went wrong",
-            "limitTickets": "Limit of:",
-            "tickets": "Tickets",
-            "registrationClosed": "Registration is closed. Please contact us for more information.",
-            "Sunday": "Sunday",
-            "Monday": "Monday",
-            "Tuesday": "Tuesday",
-            "Wednesday": "Wednesday",
-            "Thursday": "Thursday",
-            "Friday": "Friday",
-            "Saturday": "Saturday",
-            "foodDeliverybootBoxTitle": "Order Window",
-            "addToCart": "Add To Cart",
-            "save": "Save",
-            "ThankYouAfterSubmmit": "Thank you for contacting us. We have received your message and will respond to you soon.",
-            "country": "Country",
-            "productQuntityLimit": "The product is limited to a maximum of {{units_limitation}} units.",
-            "productQuntityLimitMin": "The product is limited to a minimum of {{units_limitation}} units.",
-            "forumDeleteTopic": "Deleting a topic will also permanently remove all related replies. Are you sure you want to delete it?",
-            "forumDeleteTopicTitle": "Delete Topic",
-            "forumDeleteReply": "Are you sure you want to delete this reply?",
-            "forumDeleteReplyTitle": "Delete Reply",
-            "forumNewTopic": "New Topic",
-            "forumCreateNewTopic": "Create a new topic",
-            "forumCountOfTotalPosts": "Post a total of {{numbers_of_posts}} posts",
-            "forumSearchPlaceholder": "Search topics, posts, or categories",
-            "forumLastReply": "Last Reply",
-            "follow": "Follow",
-            "following": "Following",
-            "forumReplies": "Replies",
-            "forumFrequentPosters": "Frequent Posters",
-            "chooseCategory": "Choose Category",
-            "linkCopiedToClipboard": "Link copied to clipboard",
-            "edit": "Edit",
-            "settings": "Settings",
-            "created": "Created",
-            "seeMore": "See More",
-            "options": "Options",
-            "joined": "Joined",
-            "posted": "Posted",
-            "category": "Category",
-            "areYouSure": "Are you sure?",
-            "yes": "Yes",
-            "no": "No",
-            "insertTopicTitle": "Insert Topic Title",
-            "insertTopicMessage": "Insert Message Topic",
-            "reply": "Reply",
-            "addReply": "Add reply",
-            "address": "Address:",
-            "city": "City:",
-            "state": "State:",
-            "zipCode": "Zip\/Postal Code:",
-            "instructions": "Instructions:",
-            "country_v2": "Country:",
-            "chooseDate": "Choose Date",
-            "chooseDateAndTime": "Choose Date & Time",
-            "chooseTime": "Choose Time",
-            "total": "Total:",
-            "reviewBad": "bad",
-            "reviewPoor": "poor",
-            "reviewRegular": "regular",
-            "reviewGood": "good",
-            "reviewGorgeous": "gorgeous",
-            "popupButtonSelected": "Select",
-            "eCommerceSort": {
-                "sortBy": "Sort By",
-                "recommended": "Recommended",
-                "byHighPrice": "Price, high to low",
-                "byLowerPriceBy": "Price, low to high",
-            },
-            "globalContactEmail": {
-                "fullName": "Full Name",
-                "description": "Description",
-                "subject": "Subject",
-                "contactUs": "Contact Us",
-                "infoBox": "Fill out the form or send a direct email to: {{email_address}}",
-                "thankYouMessage": "Thank you for contacting us.",
-                "thankYouCloseBtn": "Close"
-            },
-            "editStructure": "Edit Structure",
-            "editLogo": "Edit",
-            "eventNumberOfTickets": "Choose how many tickets you would like to purchase.",
-            "magicBtn": {
-                "editMagicContactButton": "Edit Contact",
-                "editMagicShareButton": "Edit Share",
-                "contactUs": {
-                    "title": "Contact",
-                    "submitBtn": "Contact Us",
-                    "ThankYouAfterSubmmit": "Thank you for contacting us. We have received your message and will respond to you soon.",
-                    "fields": {
-                        "name": "Name",
-                        "phone": "Phone",
-                        "emailAddress": "Email address",
-                        "emailAddressValidationdMsg": "Please enter a valid email.",
-                        "message": "Message",
-                        "requiredMsg": "This field is required.",
-                    }
-                },
-                "copyLink": {
-                    "success": "The link has been copied to the clipboard.",
-                },
-                "ExternalLinksPreventor": {
-                    "title": "Published Version Only",
-                    "previewExternalLinkMsg": "You are trying to exit to an external link from your website's preview mode. Please publish your website and try again from the URL of your website.",
-                },
-                "facebookMessenger": {
-                    "title": "Facebook",
-                },
-                "whatsApp": {
-                    "title": "WhatsApp",
-                },
-                "phone": {
-                    "title": "Phone",
-                },
-                "skype": {
-                    "title": "Skype",
-                },
-                "telegram": {
-                    "title": "Telegram",
-                },
-                "facebook": {
-                    "title": "Facebook",
-                },
-                "twitter": {
-                    "title": "Twitter",
-                },
-                "pinterest": {
-                    "title": "Pinterest",
-                },
-                "gmail": {
-                    "title": "Gmail",
-                },
-                "linkedIn": {
-                    "title": "LinkedIn",
-                },
-                "tumblr": {
-                    "title": "Tumblr",
-                },
-                "emailApp": {
-                    "title": "Email App",
-                },
-                "copyLink": {
-                    "title": "Copy Link",
-                }
-            },
-            "fillOutAtLeastOneField": "You need to fill out at least one field before you submit this form.",
-            "productCallToAction": {
-                "fullName": "Full Name",
-                "description": "Description",
-                "subject": "Subject",
-                "title": "Contact Us",
-                "infoBox": "Please fill out the following form if you are interested in this product:",
-                "thankYouMessage": "Thank you for contacting us.",
-                "thankYouCloseBtn": "Close",
-                "phone": "Phone",
-                "productName": "Product Name:"
-            },
-            "flipClock": {
-                "years": "Years",
-                "months": "Months",
-                "days": "Days",
-                "hours": "Hours",
-                "minutes": "Minutes",
-                "seconds": "Seconds"
-            },
-            "previewExternalLinkTitle": "External link",
-            "previewExternalLinkMsg": "You are trying to exit to an external link {{externalLink}} from the control panel, which is disabled here. Please go to full screen preview to get it working.",
-            "returnPolicy": "Return Policy",
-            "calendarHandler": {
-                "days": {
-                    "sunday": "Sunday",
-                    "monday": "Monday",
-                    "tuesday": "Tuesday",
-                    "wednesday": "Wednesday",
-                    "thursday": "Thursday",
-                    "friday": "Friday",
-                    "saturday": "Saturday"
-                },
-                "daysShort": {
-                    "sun": "Sun",
-                    "mon": "Mon",
-                    "tue": "Tue",
-                    "wed": "Wed",
-                    "thu": "Thu",
-                    "fri": "Fri",
-                    "sat": "Sat"
-                },
-                "daysMin": {
-                    "su": "Sun",
-                    "mo": "Mon",
-                    "tu": "Tue",
-                    "we": "Wed",
-                    "th": "Thu",
-                    "fr": "Fri",
-                    "sa": "Sat"
-                },
-                "months": {
-                    "january": "January",
-                    "february": "February",
-                    "march": "March",
-                    "april": "April",
-                    "may": "May",
-                    "june": "June",
-                    "july": "July",
-                    "august": "August",
-                    "september": "September",
-                    "october": "October",
-                    "november": "November",
-                    "december": "December"
-                },
-                "monthsShort": {
-                    "jan": "Jan",
-                    "feb": "Feb",
-                    "mar": "Mar",
-                    "apr": "Apr",
-                    "may": "May",
-                    "jun": "Jun",
-                    "jul": "Jul",
-                    "aug": "Aug",
-                    "sep": "Sep",
-                    "oct": "Oct",
-                    "nov": "Nov",
-                    "dec": "Dec"
-                },
-                "today": "Today",
-                "clear": "Clear",
-            },
-            "enterYourEmail": "Enter your email",
-            "subscribe": "Subscribe",
-            "backInStock": {
-                "name": "Full Name",
-                "namePlaceHolder": "Enter your full name",
-                "phone": "Phone",
-                "phonePlaceHolder": "Enter your phone number",
-                "message": "This feature is only available on the published version of your website",
-                "title": "Back In Stock Request",
-            },
-            "layouts": "Layouts",
-            "pages": "Pages",
-            "remove": "Remove",
-            "print": "Print",
-            "download": "Download",
-            "suggestTextTool": {
-                "apply": "Add",
-                "title": "Suggested Text",
-                "ai": {
-                    "generate": "Generate",
-                    "noResults": "We apologize, it seems there was a problem generating results, please try again",
-                    "category": "Category",
-                    "business": "Website Name",
-                    "custom": "Custom",
-                    "contentType": "Content Type",
-                    "categoryTT": "Enter your business category e.g. Gaming Events",
-                    "businessTT": "Enter your Website name",
-                    "contentTypeTT": "Here you can choose the type of content you want to show to your user e.g. homepage titles, about text..",
-                    "customTT": "Here you can choose the type of content you want to show to your user e.g. homepage titles, about text..",
-                    "categoryPH": "Car Rental, Tennis club...",
-                    "customPH": "About page for the MAGICPLAN company....",
-                    "showMore": "Show More",
-                    "about": "About Us",
-                    "titleOption": "Titles",
-                    "shortAboutOption": "Short About Page",
-                    "longAboutOption": "Long About Page",
-                    "customOption": "Custom",
-                    "about": "About The Website",
-                    "aboutTT": "Enter a short description of your website",
-                    "aboutPH": "Online electronic store",
-                    "focus": "Focus",
-                    "focusTT": "Add a focus sentence or word to get results related only to a specific field.",
-                    "focusPH": "How to start...",
-                    "applied": "Added",
-                    "required": "Please fill one of the fields to generate new content.",
-                },
-            },
-            "uploadFileLimitSize": "File size exceeds the limit of {{mb_in_number}} MB.",
-            "jqueryValidSpacesOnlyMsg": "Please enter a valid text and not just spaces",
-            "previewRemoveSectionTT": "Remove Section",
-        };</script><!-- JavaScript Translations Object --> <!-- CSS Minimize Bottom -->
     <link rel="stylesheet" class="defer-css"
         data-href="https://cdn-cms-s.f-static.net/versions/2/css/minimize-bottom.css?v=y83080" type="text/css"
         crossorigin="anonymous">
@@ -1651,4 +1661,5 @@
     </div><!-- Pjax Helper -->
     <div class="s123-front-last-element hidden"></div>
 </body>
+
 </html>
